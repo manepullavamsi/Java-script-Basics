@@ -10,3 +10,36 @@ TestLibary      TestRunner
 chai              mocha --Widely is used for pure js Testing.
 Enzyme            jest--widely used for React.
 jasmine           Karma--widely used for Angular.
+
+In order to get local both test libary and test runner.
+we run a command "npm install --save-dev chai mocha
+Note:Here we used flag save and dev which is used to represent where these dependendencys are dev dependency not need in productuion Region.
+
+Inorder to make avaliable the functions which are in app.js to test file we used to wirte the function with the special Syntax.
+by using module.exports={
+welcome:function(){},
+add:function(){}        ----- Here functions are written in key value pairs key's act as function Names.
+}
+
+Inside Test Folder we need to import the our app.js file in order to test the functions to do that we use following Thing.
+const {welcome,add---These are method Names which we want to import into our Test file}= require('../app').
+
+Inorder to use functions inside Testlibary(Chai) we need to import that libary.
+const assert=require('chai).assert;--Here we are just getting assert function from the the chai Module.
+
+ After that we need to write our test cases.
+ 
+ describe("Title of testing Anything",function(){
+ it("",function(){
+  var result= wecome();--Here we are calling fuction which we have imported from the app.js file.
+  assert.equal(result,"hello")--Here we pass two arguments where to check if two values are equal then test case pass otherwise testcase fails.
+  
+ })
+ it("",f(){})--To test another Test case.
+ 
+ 
+ })
+ 
+ 
+ 
+ Inorder to run test cases we need to do "npm test"
