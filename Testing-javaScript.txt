@@ -1,0 +1,12 @@
+Tesing In Java-Script :
+AS A Developer we need to do Unit Testing and End-End Testing.
+In order to perform Testing in Js we need.
+Testing File Herirachy first we need to make folder a npm mange folder in order do This
+1.npm init (Runner-mocha)
+2.we create app.js file to write our Functions
+3.create A test Folder name as test inside this folder we create a js file where we need to write test cases.
+4.In order to do testing we need testing libary and Test Runnner inoder to perform Testing
+TestLibary      TestRunner     
+chai              mocha --Widely is used for pure js Testing.
+Enzyme            jest--widely used for React.
+jasmine           Karma--widely used for Angular.
